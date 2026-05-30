@@ -1,8 +1,115 @@
-# SMS_Spam_Detection
-The world of unwanted spam sms can cause real problems, compromise privacy and potentially expose users to fraud. So I created a solution using machine learning(Logistic Regression) to solve this problem directly. Achieving a 95% success rate. The model can distinguish between spam and legitimate sms by leveraging natural language processing techniques such as tokenization, stemming, TF-IDF.
+# 📩 SMS Spam Detection Using Machine Learning
 
-I have used Streamlit to implement over flask because it is simple and easy to deploy and no need to worry regarding web development. With just a few lines of code, I created a user-friendly website where users could enter a message and instantly guess whether it was SPAM or HAM.
+A Machine Learning based web application that classifies SMS messages as **Spam** or **Ham (Not Spam)** using Natural Language Processing (NLP) techniques and a trained ML model.
 
-I rigorously evaluate the model's performance using indicators such as accuracy, precision and confusion matrix. Among other algorithms such as Naive Bayes and decision trees, logistic regression emerged as the best solution.
+Built with **Python**, **Scikit-Learn**, and **Streamlit**.
 
-Ensuring user privacy and security is a priority throughout the project. By using SMS spam classifier we not only reduce spam concerns, but also protect users from privacy breaches and fraud. The project demonstrates the power of machine learning to improve everyday knowledge. By reducing the impact of unnecessary spam, we create a safer, more enjoyable experience for everyone.
+---
+
+## 🚀 Features
+
+* Detects whether an SMS is **Spam** or **Ham**
+* Text preprocessing using **NLP**
+* User-friendly web interface using **Streamlit**
+* Fast and lightweight prediction system
+* Trained Machine Learning model with vectorization
+
+---
+
+## 🛠️ Tech Stack
+
+* **Python**
+* **Streamlit**
+* **Scikit-Learn**
+* **NLTK**
+* **Pandas**
+* **NumPy**
+
+---
+
+## 📂 Project Structure
+
+```plaintext
+SMS_Spam_Detection/
+│── app.py
+│── model.pkl
+│── vectorizer.pkl
+│── requirements.txt
+│── README.md
+│── encoded_spam.csv
+│── Naive_Bayes_Project.py
+│── Logistic_Regression_Project.py
+│── Decision_Tree_Project.py
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+### Clone the repository
+
+```bash
+git clone [https://github.com/SaquibAnjum/Sms_spam_detection.git]
+cd sms-spam-detection
+```
+
+### Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Run the Streamlit app
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## 💡 How It Works
+
+1. User enters an SMS message.
+2. Text preprocessing is applied:
+
+   * Lowercasing
+   * Tokenization
+   * Stopword removal
+   * Stemming
+3. Text is converted into numerical features using vectorization.
+4. The trained machine learning model predicts whether the message is **Spam** or **Ham**.
+
+---
+
+## 📸 Demo
+
+Example Input:
+
+```text
+Congratulations! You won a free iPhone. Click here to claim.
+```
+
+Output:
+
+```text
+Spam
+```
+
+---
+
+## 🔮 Future Improvements
+
+* Improve model accuracy
+* Add multiple ML model comparison
+* Deploy with cloud integration
+* Add visualization dashboard
+
+---
+
+## 👨‍💻 Author
+
+**Md Saquib Anjum Khan**
+
+B.Tech CSE Student | IIIT Bhagalpur
+
+GitHub: [https://github.com/SaquibAnjum]
